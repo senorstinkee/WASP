@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8e9c9339-8c5c-4ef4-b88c-777bd426ad50}</ProjectGuid>
+    <RootNamespace>WASP</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CSprite.h" />
+    <ClInclude Include="CSpriteChocolate.h" />
+    <ClInclude Include="CSpriteCoffee.h" />
+    <ClInclude Include="CSpriteOpenDoor.h" />
+    <ClInclude Include="CSpritePantsFallDown.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WASP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CSprite.cpp" />
+    <ClCompile Include="WASP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WASP.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\background.bmp" />
+    <Image Include="res\chocolate_00.png" />
+    <Image Include="res\chocolate_01.png" />
+    <Image Include="res\chocolate_02.png" />
+    <Image Include="res\chocolate_03.png" />
+    <Image Include="res\chocolate_04.png" />
+    <Image Include="res\chocolate_05.png" />
+    <Image Include="res\chocolate_06.png" />
+    <Image Include="res\chocolate_07.png" />
+    <Image Include="res\chocolate_08.png" />
+    <Image Include="res\chocolate_09.png" />
+    <Image Include="res\chocolate_10.png" />
+    <Image Include="res\chocolate_11.png" />
+    <Image Include="res\chocolate_12.png" />
+    <Image Include="res\chocolate_13.png" />
+    <Image Include="res\chocolate_14.png" />
+    <Image Include="res\chocolate_15.png" />
+    <Image Include="res\chocolate_16.png" />
+    <Image Include="res\chocolate_17.png" />
+    <Image Include="res\chocolate_18.png" />
+    <Image Include="res\chocolate_19.png" />
+    <Image Include="res\chocolate_20.png" />
+    <Image Include="res\chocolate_21.png" />
+    <Image Include="res\chocolate_22.png" />
+    <Image Include="res\chocolate_23.png" />
+    <Image Include="res\chocolate_24.png" />
+    <Image Include="res\chocolate_25.png" />
+    <Image Include="res\chocolate_26.png" />
+    <Image Include="res\chocolate_27.png" />
+    <Image Include="res\chocolate_28.png" />
+    <Image Include="res\chocolate_29.png" />
+    <Image Include="res\coffee_00.png" />
+    <Image Include="res\coffee_01.png" />
+    <Image Include="res\coffee_02.png" />
+    <Image Include="res\coffee_03.png" />
+    <Image Include="res\coffee_04.png" />
+    <Image Include="res\coffee_05.png" />
+    <Image Include="res\coffee_06.png" />
+    <Image Include="res\coffee_07.png" />
+    <Image Include="res\coffee_08.png" />
+    <Image Include="res\coffee_09.png" />
+    <Image Include="res\coffee_10.png" />
+    <Image Include="res\coffee_11.png" />
+    <Image Include="res\coffee_12.png" />
+    <Image Include="res\coffee_13.png" />
+    <Image Include="res\coffee_14.png" />
+    <Image Include="res\coffee_15.png" />
+    <Image Include="res\coffee_16.png" />
+    <Image Include="res\coffee_17.png" />
+    <Image Include="res\coffee_18.png" />
+    <Image Include="res\coffee_19.png" />
+    <Image Include="res\opendoor_00.png" />
+    <Image Include="res\opendoor_01.png" />
+    <Image Include="res\opendoor_02.png" />
+    <Image Include="res\opendoor_03.png" />
+    <Image Include="res\opendoor_04.png" />
+    <Image Include="res\opendoor_05.png" />
+    <Image Include="res\opendoor_06.png" />
+    <Image Include="res\opendoor_07.png" />
+    <Image Include="res\opendoor_08.png" />
+    <Image Include="res\opendoor_09.png" />
+    <Image Include="res\pants_00.png" />
+    <Image Include="res\pants_01.png" />
+    <Image Include="res\pants_02.png" />
+    <Image Include="res\pants_03.png" />
+    <Image Include="res\pants_04.png" />
+    <Image Include="res\pants_05.png" />
+    <Image Include="res\pants_06.png" />
+    <Image Include="res\pants_07.png" />
+    <Image Include="small.ico" />
+    <Image Include="WASP.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

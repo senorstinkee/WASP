@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WASP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpriteOpenDoor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpritePantsFallDown.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpriteCoffee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpriteChocolate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WASP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WASP.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="WASP.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_00.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_01.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_02.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_03.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_04.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_05.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_06.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_07.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_08.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\opendoor_09.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_00.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_01.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_02.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_03.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_04.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_05.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_06.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\pants_07.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_00.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_01.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_02.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_03.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_04.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_05.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_06.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_07.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_08.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_09.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_17.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_18.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_19.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_20.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_21.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_22.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_23.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_25.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_26.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_27.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_28.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\chocolate_29.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_00.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_01.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_02.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_03.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_04.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_05.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_06.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_07.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_08.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_09.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_14.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_15.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_17.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_18.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\coffee_19.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
