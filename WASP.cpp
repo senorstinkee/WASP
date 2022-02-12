@@ -16,7 +16,7 @@ HWND    hWND         = nullptr;
 
 float   mRatio = 1.0f;
 CRect   mRect;
-UINT    mFramesPerSec = 25;
+UINT    mFramesPerSec = 15;
 size_t  mFrame        = (size_t) (mFramesPerSec * (GetTickCount64() / 1000));;
 
 CSpriteOpenDoor      mOpenDoor;
