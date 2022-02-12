@@ -16,7 +16,7 @@ HWND    hWND         = nullptr;
 
 float   mRatio = 1.0f;
 CRect   mRect;
-UINT    mFramesPerSec = 15;
+UINT    mFramesPerSec = 25;
 size_t  mFrame        = (size_t) (mFramesPerSec * (GetTickCount64() / 1000));;
 
 CSpriteOpenDoor      mOpenDoor;
@@ -131,6 +131,16 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         case IDM_EXIT:  DestroyWindow(hWnd); break;
         default: return DefWindowProc(hWnd, message, wParam, lParam);
         }
+      } break;
+
+    case WM_ERASEBKGND:
+      {
+      CRect rect;
+      GetClientRect(hWND, &rect);
+
+      HDC hDC = GetDC(hWnd);
+      FillRect(hDC, &rect, CreateSolidBrush(RGB(64, 128, 128)));
+      ReleaseDC(hWnd, hDC);
       } break;
 
     case WM_PAINT:
@@ -283,52 +293,3 @@ IStream* CreateStreamOnResource(LPCTSTR lpName, LPCTSTR lpType)
   GlobalFree(hgblResourceData);
   return ipStream;
   }
-
-//bool Load(CImage* pImage, LPCTSTR lpszResourceName, HINSTANCE hResource)
-//  {
-//  if (hResource == NULL)
-//    hResource = AfxFindResourceHandle(lpszResourceName, _T("PNG") );
-//
-//    HRSRC hRsrc = ::FindResource(hResource, lpszResourceName, _T("PNG") );
-//    if (!hRsrc) return false;
-//
-//    HGLOBAL hGlobal = LoadResource(hResource, hRsrc);
-//    if (!hGlobal) return false;
-//
-//    LPBYTE lpBuffer = (LPBYTE) ::LockResource(hGlobal);
-//    if (!lpBuffer)
-//      {
-//      FreeResource(hGlobal);
-//      return false;
-//      }
-//
-//    bool bRes = false;
-//      {
-//      UINT uiSize = ::SizeofResource(hResource, hRsrc);
-//
-//      HGLOBAL hRes = ::GlobalAlloc(GMEM_MOVEABLE, uiSize);
-//
-//      if (hRes)
-//        {
-//        IStream* pStream = NULL;
-//        LPVOID lpResBuffer = ::GlobalLock(hRes);
-//        ASSERT (lpResBuffer != NULL);
-//
-//        memcpy(lpResBuffer, lpBuffer, uiSize);
-//
-//        HRESULT hResult = ::CreateStreamOnHGlobal(hRes, TRUE, &pStream);
-//
-//        if (hResult == S_OK)
-//          {
-//          pImage->Load(pStream);
-//          pStream->Release();
-//          bRes= true;
-//          }
-//        }
-//    }
-//
-//  UnlockResource(hGlobal);
-//  FreeResource(hGlobal);
-//
-//  return bRes;
-//  }
